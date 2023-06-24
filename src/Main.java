@@ -1,18 +1,29 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
+        System.out.println("Esse é o Scren Match");
+        System.out.println("Filme: Top Gun: Maverick");
 
-        System.out.printf("Hello World!");
+        int releaseYear = 2022;
+        System.out.println("Ano de Lançamento: " + releaseYear);
+        boolean includedPlan = false;
+        System.out.println("Incluído no Plano?: " + includedPlan);
+        double ratingMovie = 8.5;
+        System.out.println("Avaliação do Filme: " + ratingMovie);
+        String synopsis = """
+                          Filme de aventura com galã dos anos 80
+                          Ganhador do Oscar de melhor filme de tiros!
+                          
+                          """;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("Sinopse: " + synopsis);
+        System.out.println("//-------------------------------------------------------//");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        String nome = "Maria";
+        int idade = 30;
+        double valor = 55.9999;
+        System.out.println(String.format("Meu nome é %s, eu tenho %d anos e hoje gastei %.2f reais", nome, idade, valor));
+
+
     }
 }
