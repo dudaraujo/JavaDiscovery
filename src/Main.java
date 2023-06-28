@@ -36,15 +36,24 @@ public class Main {
         System.out.println(mensagem);
         comando = read.nextInt();
 
+
         if(comando == 1) {
             conta1.exibeSaldo();
 
         } else if (comando == 2) {
-            System.out.println("oi");
+            System.out.println("Quanto você gostaria de receber?");
+            int valor = read.nextInt();
+            conta1.recebeTransferencia(valor);
+
+        } else if (comando == 3 ) {
+            System.out.println("Quanto você gostaria de transferir");
+            int valor = read.nextInt();
+            conta1.fazTranfencia(valor);
+
+        } else {
+            System.out.println("Valor inválido");
+
         }
-
-
-
 
 
     }

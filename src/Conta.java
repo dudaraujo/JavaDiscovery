@@ -8,7 +8,7 @@ public class Conta {
         public void exibeSaldo() {
             System.out.println("O saldo da sua conta é: " + saldoConta);
         }
-        private int recebeTransferencia(int valor) {
+        public int recebeTransferencia(int valor) {
 
             saldoConta += valor;
             System.out.println("O saldo atualizado da conta é: " + saldoConta);
@@ -16,8 +16,16 @@ public class Conta {
             return saldoConta;
         }
 
-        public static void fazTranfencia () {
+        public int fazTranfencia (int valor) {
 
+            if(saldoConta > valor) {
+                saldoConta -= valor;
+                System.out.println("O saldo atualizado da sua conta é: " + saldoConta);
+
+            } else {
+                System.out.println("Não há saldo sulficiente para realizar essa transferência");
+            }
+            return saldoConta;
         }
 
         public static void enviaPix () {
